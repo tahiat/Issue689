@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.util;
+package com.example;
 import org.checkerframework.framework.qual.FromByteCode;
 import org.checkerframework.framework.qual.AnnotatedFor;
 import org.checkerframework.checker.nullness.qual.UnknownKeyFor;
