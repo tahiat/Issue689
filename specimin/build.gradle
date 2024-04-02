@@ -12,8 +12,9 @@ java {
 }
 
 dependencies {
-compileOnly files("../../input/jOOQ/specimin/checker-qual.jar")
-checkerFramework files("../../input/jOOQ/specimin/checker.jar")
+    compileOnly files("../../input/Issue689/specimin/checker-qual.jar")
+    checkerFramework files("../../input/Issue689/specimin/checker.jar")
+    checkerFrameworkAnnotatedJDK files("../../input/Issue689/specimin/jdk8.jar")
 }
 
 
@@ -24,7 +25,8 @@ repositories {
 
 checkerFramework {
     checkers = [
-            'org.checkerframework.checker.guieffect'
+            'org.checkerframework.checker.guieffect.GuiEffectChecker'
     ]
     excludeTests = true
+    incrementalize = false
 }
